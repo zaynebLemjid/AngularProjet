@@ -3,7 +3,7 @@
     {
       "id": 2,
       "titre": "Deep Dive into JavaScript",
-      "image": "js.jpg",
+      "image": "assets/js.jpg",
       "date": "20/12/2023",
       "confirmer": true,
       "categorie": "Atelier pratique",
@@ -17,7 +17,7 @@
     {
       "id": 3,
       "titre": "Interactive React Workshop",
-      "image": "react.jpg",
+      "image": "assets/react.jpeg",
       "date": "12/1/2024",
       "confirmer": false,
       "categorie": "Atelier Pratique",
@@ -31,7 +31,7 @@
     {
       "id": 4,
       "titre": "Advanced Topics in Web Development",
-      "image": "AdvancedTopicsinWebDevelopment.jpg",
+      "image": "assets/AdvancedTopicsinWebDevelopment.jpg",
       "date": "18/2/2024",
       "confirmer": true,
       "categorie": "Atelier theorique",
@@ -45,7 +45,7 @@
     {
       "id": 5,
       "titre": "Thematic Web App Hackathon",
-      "image": "ThematicWebAppHackathon.png",
+      "image": "assets/ThematicWebAppHackathon.png",
       "date": "2/5/2023",
       "confirmer": true,
       "categorie": "Atelier theorique",
@@ -59,7 +59,7 @@
     {
       "id": 6,
       "titre": "Current Trends in Web Development",
-      "image": "CurrentTrendsinWebDevelopment.jpeg",
+      "image": "assets/CurrentTrendsinWebDevelopment.jpg",
       "date": "16/5/2023",
       "confirmer": true,
       "categorie": "Atelier theorique",
@@ -73,7 +73,7 @@
     {
       "id": 7,
       "titre": "Lightning Talks: Productivity Hacks",
-      "image": "",
+      "image": "assets/LightningTalksProductivityHacks.png",
       "date": "1/6/2023",
       "confirmer": false,
       "categorie": "Atelier Pratique",
@@ -87,7 +87,7 @@
     {
       "id": 8,
       "titre": "Networking Night with Web Developers",
-      "image": "networkingNight.png",
+      "image": "assets/NetworkingNightwithWebDevelopers.png",
       "date": "15/2/2024",
       "confirmer": true,
       "categorie": "Atelier Pratique",
@@ -102,7 +102,7 @@
     {
       "id": 9,
       "titre": "Code Clinic: Troubleshooting Workshop",
-      "image": "code-clinic.png",
+      "image": "assets/CodeClinictroubleshootingWorkshop.png",
       "date": "3/7/2023",
       "confirmer": true,
       "categorie": "Atelier Pratique",
@@ -116,7 +116,7 @@
     {
       "id": 10,
       "titre": "Portfolio Showcase Evening",
-      "image": "PortfolioShowcaseEvening1.jpg",
+      "image": "assets/PortfolioShowcaseEvening1.jpg",
       "date": "17/7/2023",
       "confirmer": true,
       "categorie": "Atelier Pratique",
@@ -130,7 +130,7 @@
     {
       "id": 15,
       "titre": "Angular Masterclass",
-      "image": "angular.png",
+      "image": "assets/angular.png",
       "date": "10/12/2023",
       "confirmer": "true",
       "categorie": "Atelier theorique",

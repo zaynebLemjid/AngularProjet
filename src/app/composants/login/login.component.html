@@ -1,29 +1,46 @@
-<div class="container">
-    <img src="assets/p.jpg" alt="logo">
-    <strong>Authentification</strong>
-    <div class="mb-3 mt-3">
-        <label class="form-label">Nom d'utilisateur:</label>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Introduisez votre nom d'utilisateur"
-          #username
-        />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="flex-container">
+        <div class="form-container">
+          <strong>Authentification</strong>
+          <div class="mb-3 mt-3">
+            <label class="form-label">Nom d'utilisateur:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Introduisez votre nom d'utilisateur"
+              #username
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password:</label>
+            <input
+              #password
+              type="password"
+              class="form-control"
+              placeholder="Introduisez votre mot de passe"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="login(username.value, password.value)"
+          >
+            S'authentifier
+          </button>
+        </div>
       </div>
-      <div class="mb-3">
-        <label class="form-label">Password:</label>
-        <input
-          #password
-          type="password"
-          class="form-control"
-          placeholder="Introduisez votre mot de passe"
-        />
-      </div>
-      <button
-        type="button"
-        class="btn btn-primary"
-        (click)="login(username.value, password.value)"
-      >
-        S'authentifier
-      </button>
-</div>
+    </div>
+  </main>
+</body>
+
+</html>

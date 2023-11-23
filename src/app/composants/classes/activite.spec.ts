@@ -1,4 +1,4 @@
-import { Avtivite } from './activite';
+import { Activite } from './activite';
 
 describe('Avtivite', () => {
   it('should create an instance', () => {

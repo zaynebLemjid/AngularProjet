@@ -13,6 +13,7 @@ import { LoginComponent } from './composants/login/login.component';
 import { DepComponent } from './composants/public/dep/dep.component';
 import { SelectedActiviteComponent } from './composants/front/selected-activite/selected-activite.component';
 import { AjoutActiviteComponent } from './composants/back/ajout-activite/ajout-activite.component';
+import { ModifierComponent } from './composants/back/modifier/modifier.component';
 
 const routes: Routes = [
   {
@@ -20,18 +21,18 @@ const routes: Routes = [
     component:DashboradPublicComponent,
     children:[
       {path:'' , redirectTo:'departement',pathMatch:'full'},
-      {path:'departement',title:'departement',component:DepComponent },
+      {path:'departement',title:'About Us',component:DepComponent },
       {path:'formation' ,title:'formation' ,component:FormationComponent},
       {path:'iset' ,title:'iset' ,component:IsetCharguiaComponent},
 
     ]},
     {
-      path:'font',title:'user',component:DashboradUserComponent,
+      path:'front',title:'user',component:DashboradUserComponent,
       children:[
         {path:'',redirectTo:'infos',pathMatch:'full'},
         {path:'infos',title:'information',component:InfosComponent },
         {path:'activites',title:'activites',component:ActivitesFrontComponent},
-        {path:'activites/:id' ,title :'activite selecter',component:SelectedActiviteComponent}
+        {path:'selected-activite/:id' ,title :'activite selecter',component:SelectedActiviteComponent}
       ],
 },
   {
@@ -39,11 +40,12 @@ const routes: Routes = [
     children:[
       {path:'',redirectTo:'activites' ,pathMatch:'full' },
       {path:'activitesBack', title:'activites',component:ActivitesBackComponent},
-      {path:'ajoutActivite',title:'ajout',component:AjoutActiviteComponent}
+      {path:'ajoutActivite',title:'ajout',component:AjoutActiviteComponent},
+      {path:'modifier/:id', title:'modifier',component:ModifierComponent}
     ]
   },
   {path:'login' ,title :'login' ,component:LoginComponent},
-  {path:'**',title:'erruer',component:ErrurComponent }
+  {path:'**',title:'erreur',component:ErrurComponent }
 ];
 
 @NgModule({

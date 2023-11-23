@@ -9,22 +9,24 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   constructor(
-    private authService:AuthService,
-    private router:Router
-  ){}
-login(username:string,password:string){
-  const isValid=this.authService.login(username,password);
+    private authService: AuthService,
+    private router: Router
+  ) {}
 
-  if(!isValid){
-    alert('login or mot de passe incorrect');
-    this.router.navigate(['/login']);
-  }
-  if(this.authService.isAdmin()){
-    this.router.navigate(['/backEnd']);
-  }
+  login(username: string, password: string) {
+    const isValid = this.authService.login(username, password);
 
-  if(this.authService.isUser()){
-    this.router.navigate(['/font']);
+    if (!isValid) {
+      alert('Login or password incorrect');
+      // Redirect back to the login page
+      this.router.navigate(['/login']);
+    } else {
+      // If credentials are valid, check user role and navigate accordingly
+      if (this.authService.isAdmin()) {
+        this.router.navigate(['/backEnd/activitesBack']);
+      } else if (this.authService.isUser()) {
+        this.router.navigate(['/front']);
+      }
+    }
   }
-}
 }

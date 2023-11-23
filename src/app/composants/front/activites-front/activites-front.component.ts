@@ -19,7 +19,7 @@ ngOnInit(): void {
     )
 }
 goToActivite(id:number):void{
-  this.router.navigate(['/activites',id]);
+  this.router.navigate(['/front/selected-activite', id]);
 }
 
 
