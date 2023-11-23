@@ -26,3 +26,49 @@ ul{
 span{
     font-weight: bold;
 }
+#img2{
+    height: 350px;
+    width: 350px;
+    float: right;
+    margin-right: 50px;
+}
+#img3{
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin-right: 50px;
+}
+
+#img4{
+    height: 400px;
+    width: 352px;
+    float: right;
+    margin-right: 50px;
+}
+
+@keyframes move {
+    0% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(0px); /* Adjust the value based on how much you want it to move */
+    }
+  }
+
+  #img3 {
+    animation: move 1s ease-in-out; /* Adjust the duration and easing as needed */
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(150%);
+    }
+    100% {
+      transform: translateX(0px); /* Adjust the value based on how much you want it to move */
+    }
+  }
+
+  #txt1, #txt2, #img2, #txt3, #img4, #txt4, #txt5 {
+    animation: move 1s ease-in-out; /* Adjust the duration and easing as needed */
+
+  }

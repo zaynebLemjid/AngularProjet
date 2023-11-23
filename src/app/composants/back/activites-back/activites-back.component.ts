@@ -9,6 +9,7 @@ import { Activite } from '../../classes/activite';
   styleUrls: ['./activites-back.component.css']
 })
 export class ActivitesBackComponent  implements OnInit{
+modifier: any|string;
   constructor(
     private http:HttpClient,
     private activiteService:ActiviteService

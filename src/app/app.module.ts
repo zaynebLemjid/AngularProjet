@@ -21,6 +21,7 @@ import { SelectedActiviteComponent } from './composants/front/selected-activite/
 import { MenuBackComponent } from './composants/back/menu-back/menu-back.component';
 import { AjoutActiviteComponent } from './composants/back/ajout-activite/ajout-activite.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ModifierComponent } from './composants/back/modifier/modifier.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MenuFrontComponent,
     SelectedActiviteComponent,
     MenuBackComponent,
-    AjoutActiviteComponent
+    AjoutActiviteComponent,
+    ModifierComponent
   ],
   imports: [
     BrowserModule,

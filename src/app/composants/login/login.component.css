@@ -4,15 +4,18 @@ body {
   align-items: center;
   height: 100vh; /* 100% of the viewport height */
   margin: 0;
-  background-color: rgb(196, 193, 193);
+  background-image: url(../../../assets/backroundlogin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
   border-radius: 2%;
   padding: 30px;
-  background-color: white;
+  background-color: rgb(255, 252, 252);
   height: 500px;
   width: 500px;
+  backdrop-filter: blur(10px);
 }
 
 .flex-container {

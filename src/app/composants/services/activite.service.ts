@@ -8,6 +8,9 @@ const URL='http://localhost:3000/activites';
   providedIn: 'root'
 })
 export class ActiviteService {
+  modifierActivite(activite: Activite) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(
     private http:HttpClient
@@ -29,4 +32,5 @@ export class ActiviteService {
   public addActivite(a : Activite ):Observable<Activite>{
     return this.http.post<Activite>(URL,a);
   }
+  
 }
