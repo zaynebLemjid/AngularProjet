@@ -1,0 +1,77 @@
+<div class="container">
+    <form [formGroup]="activiteForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label > Identifiant du L activite</label>
+            <input type="number" class="form-control" name="id" formControlName="id">
+        </div>
+        <div *ngIf="id?.invalid && id?.dirty" class="alert alert-danger">
+            L'identifiant doit etre un nombre
+        </div>
+    
+        <div>
+            <label > Titre </label>
+            <input type="text" class="form-control" name="id" formControlName="titre">
+        </div>
+        <div *ngIf="titre?.invalid && titre?.dirty" class="alert alert-danger" >
+            Le titre doit etre compose par au moins deux mots
+        </div>
+    
+
+        <div>
+            <label>Image</label>
+            <input type=" text" class="form-control" name="image" formControlName="image">
+        </div>
+        <div *ngIf="image?.invalid && image?.dirty" class="alert alert-danger">
+            l image est obligatoire
+        </div>
+
+        <div>
+            <label>date</label>
+            <input type=" text" class="form-control" name="date" formControlName="date">
+        </div>
+        <div *ngIf="date?.invalid && date?.dirty" class="alert alert-danger">
+            la doit etre comprise entre 1/12/2023 et 30/05/2024
+        </div>
+
+        <div>
+            <label>Selectionner Categorie</label>
+            <select name="categorie" formControlName="categorie" class="form-select">
+                <option *ngFor="let cat of lesCategories" [value]="cat">{{cat}}</option>
+            </select>
+        </div>
+
+        <div>
+            <label >Confirmer :</label>
+            <input type="text" class="form-control" name="confirmer" formControlName="confirmer">
+        </div>
+        <div *ngIf="confirmer?.invalid && confirmer?.dirty" class="alert alert-danger">
+            confirmer doit etre true or false
+        </div>
+
+
+        <div formGroupName="infos">
+            <div>
+                <label >Donner le lieu</label>
+                <input type="text" class="form-control" name="lieu" formControlName="lieu">
+            </div>
+
+            <div>
+                <label>Donner l heur</label>
+                <input type="number" class="form-control" formControlName="temps">
+            </div>
+        </div>
+        
+
+
+        <input type="submit"
+        [disabled]="activiteForm.invalid"
+        class="btn btn-secondary"
+        value="ajouter">
+
+        <input type="submit"
+        class="btn btn-danger"
+        value="Vider"
+        (click)="OnVider()">
+    </form>
+</div>
+

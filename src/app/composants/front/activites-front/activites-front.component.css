@@ -1,0 +1,16 @@
+*{
+    text-align: center;
+}
+img{
+    height: 100px;
+}
+div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+ul{
+    height: 300px;
+    width: 300px;
+}

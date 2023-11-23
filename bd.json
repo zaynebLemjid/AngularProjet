@@ -1,0 +1,143 @@
+{
+  "activites": [
+    {
+      "id": 2,
+      "titre": "Deep Dive into JavaScript",
+      "image": "js.jpg",
+      "date": "20/12/2023",
+      "confirmer": true,
+      "categorie": "Atelier pratique",
+      "infos": [
+        {
+          "lieu": "Salle de conférence",
+          "temps": 14
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titre": "Interactive React Workshop",
+      "image": "react.jpg",
+      "date": "12/1/2024",
+      "confirmer": false,
+      "categorie": "Atelier Pratique",
+      "infos": [
+        {
+          "lieu": "Espace de coworking",
+          "temps": 10
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titre": "Advanced Topics in Web Development",
+      "image": "AdvancedTopicsinWebDevelopment.jpg",
+      "date": "18/2/2024",
+      "confirmer": true,
+      "categorie": "Atelier theorique",
+      "infos": [
+        {
+          "lieu": "Salle de formation",
+          "temps": 15
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titre": "Thematic Web App Hackathon",
+      "image": "ThematicWebAppHackathon.png",
+      "date": "2/5/2023",
+      "confirmer": true,
+      "categorie": "Atelier theorique",
+      "infos": [
+        {
+          "lieu": "Salle de travail collaboratif",
+          "temps": 11
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titre": "Current Trends in Web Development",
+      "image": "CurrentTrendsinWebDevelopment.jpeg",
+      "date": "16/5/2023",
+      "confirmer": true,
+      "categorie": "Atelier theorique",
+      "infos": [
+        {
+          "lieu": "Amphithéâtre",
+          "temps": 18
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titre": "Lightning Talks: Productivity Hacks",
+      "image": "",
+      "date": "1/6/2023",
+      "confirmer": false,
+      "categorie": "Atelier Pratique",
+      "infos": [
+        {
+          "lieu": "Espace commun",
+          "temps": 14
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titre": "Networking Night with Web Developers",
+      "image": "networkingNight.png",
+      "date": "15/2/2024",
+      "confirmer": true,
+      "categorie": "Atelier Pratique",
+      "infos": [
+        {
+          "lieu": "Restaurant local",
+          "temps": 12,
+          "categorie": "Atelier Pratique"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titre": "Code Clinic: Troubleshooting Workshop",
+      "image": "code-clinic.png",
+      "date": "3/7/2023",
+      "confirmer": true,
+      "categorie": "Atelier Pratique",
+      "infos": [
+        {
+          "lieu": "Auditorium",
+          "temps": 13
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titre": "Portfolio Showcase Evening",
+      "image": "PortfolioShowcaseEvening1.jpg",
+      "date": "17/7/2023",
+      "confirmer": true,
+      "categorie": "Atelier Pratique",
+      "infos": [
+        {
+          "lieu": "Salle d'exposition",
+          "temps": 19
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titre": "Angular Masterclass",
+      "image": "angular.png",
+      "date": "10/12/2023",
+      "confirmer": "true",
+      "categorie": "Atelier theorique",
+      "infos": {
+        "lieu": "Salle de formation 1",
+        "temps": 17
+      }
+    }
+  ]
+}
