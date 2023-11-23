@@ -9,6 +9,7 @@ import { Activite } from '../../classes/activite';
   styleUrls: ['./selected-activite.component.css']
 })
 export class SelectedActiviteComponent implements OnInit{
+activites: any|string;
   
   constructor(
     private activiteService:ActiviteService,
@@ -21,8 +22,8 @@ export class SelectedActiviteComponent implements OnInit{
   }*/
   @Input() activite!:Activite;
   ngOnInit(): void {
-      const id=this.activatedRoute.snapshot.params['activiteId'];
-      this.activiteService.getActivitesById(id).subscribe((data)=>this.activite=data);
+    const id = this.activatedRoute.snapshot.params['id'];
+    this.activiteService.getActivitesById(id).subscribe((data) => this.activite = data);
   }
 
 }

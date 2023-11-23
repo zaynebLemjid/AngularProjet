@@ -24,7 +24,7 @@ login(username:string,password:string){
   }
 
   if(this.authService.isUser()){
-    this.router.navigate(['/font']);
+    this.router.navigate(['/front']);
   }
 }
 }

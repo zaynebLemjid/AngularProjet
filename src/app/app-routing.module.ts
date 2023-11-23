@@ -26,12 +26,12 @@ const routes: Routes = [
 
     ]},
     {
-      path:'font',title:'user',component:DashboradUserComponent,
+      path:'front',title:'user',component:DashboradUserComponent,
       children:[
         {path:'',redirectTo:'infos',pathMatch:'full'},
         {path:'infos',title:'information',component:InfosComponent },
         {path:'activites',title:'activites',component:ActivitesFrontComponent},
-        {path:'activites/:id' ,title :'activite selecter',component:SelectedActiviteComponent}
+        {path:'selected-activite/:id' ,title :'activite selecter',component:SelectedActiviteComponent}
       ],
 },
   {
@@ -43,7 +43,7 @@ const routes: Routes = [
     ]
   },
   {path:'login' ,title :'login' ,component:LoginComponent},
-  {path:'**',title:'erruer',component:ErrurComponent }
+  {path:'**',title:'erreur',component:ErrurComponent }
 ];
 
 @NgModule({

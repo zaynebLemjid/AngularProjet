@@ -1,0 +1,17 @@
+.card-body {
+    position: relative;
+}
+
+.card-img-top {
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+img{
+    height: 200px;
+    max-width: 500px;
+}
+ul{
+    text-align: center;
+}

@@ -1,7 +1,7 @@
 <div class="container">
     <form [formGroup]="activiteForm" (ngSubmit)="onSubmit()">
         <div>
-            <label > Identifiant du L activite</label>
+            <label > Identifiant du L'activite</label>
             <input type="number" class="form-control" name="id" formControlName="id">
         </div>
         <div *ngIf="id?.invalid && id?.dirty" class="alert alert-danger">
@@ -26,7 +26,7 @@
         </div>
 
         <div>
-            <label>date</label>
+            <label>Date</label>
             <input type=" text" class="form-control" name="date" formControlName="date">
         </div>
         <div *ngIf="date?.invalid && date?.dirty" class="alert alert-danger">
@@ -56,7 +56,7 @@
             </div>
 
             <div>
-                <label>Donner l heur</label>
+                <label>Donner l'heure</label>
                 <input type="number" class="form-control" formControlName="temps">
             </div>
         </div>

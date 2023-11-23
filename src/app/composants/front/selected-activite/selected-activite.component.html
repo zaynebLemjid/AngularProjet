@@ -1,17 +1,20 @@
-<div class="card container max-width" style="max-width: 350px">
-    <div  class="card-header text-center">{{activite.titre}}</div>
+<div class="card container max-width" style="max-width: 500px">
+    <div class="card-header text-center">{{activite.titre}}</div>
     <div class="card-body">
         <ul>
+            <img class="card-body" src="{{activite.image}}">
             <li>Date :{{activite.date}}</li>
             <li>Horaire : {{activite.infos.temps}}</li>
             <li>Lieu {{activite.infos.lieu}}</li>
         </ul>
         
         <div class="card-footer text-muted text-center">
-            <button routerLink="/activites"
-            class="btn btn-primary">
-            Retour
-        </button>
+            <input 
+            class="btn btn-warning"
+             type="button" 
+             [routerLink]="['/front/activites']"
+             value="return">
+        
         </div>
     </div>
 </div>

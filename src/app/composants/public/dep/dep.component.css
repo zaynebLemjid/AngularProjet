@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+img{
+    width: 100%;
+    height: 600px;
+    padding-bottom: 20px;
+}
+p{
+    margin-left: 40px;
+}
+footer{
+    width: 100%;
+    margin-top: 20px;
+}
+ul{
+    margin-top: 20px;
+    list-style-type: none;
+}
+span{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
