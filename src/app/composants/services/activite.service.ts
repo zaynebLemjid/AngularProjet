@@ -32,5 +32,8 @@ export class ActiviteService {
   public addActivite(a : Activite ):Observable<Activite>{
     return this.http.post<Activite>(URL,a);
   }
+  updateActivite(activite:Activite):Observable<Activite>{
+    return this.http.put<Activite>(`${URL}/${activite.id}`,activite);
+  }
   
 }

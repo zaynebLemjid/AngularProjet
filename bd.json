@@ -1,20 +1,6 @@
 {
   "activites": [
     {
-      "id": 2,
-      "titre": "Deep Dive into JavaScript",
-      "image": "assets/js.jpg",
-      "date": "20/12/2023",
-      "confirmer": true,
-      "categorie": "Atelier pratique",
-      "infos": [
-        {
-          "lieu": "Salle de conférence",
-          "temps": 14
-        }
-      ]
-    },
-    {
       "id": 3,
       "titre": "Interactive React Workshop",
       "image": "assets/react.jpeg",
