@@ -15,17 +15,27 @@ modifier: any|string;
     private activiteService:ActiviteService
   ){}
   lesActivites:Activite[]=[];
-
+  activitesAffiche:Activite[]=[];
+    mot:string="";
+    activiteResult:Activite[]=[];
 ngOnInit() {
     return this.activiteService.getActivites().subscribe(data=>{
-      this.lesActivites=data
+      this.lesActivites=data;
+      this.activitesAffiche=data;
+      
     })
 }
+
 onSupprime(id: number):void{
   this.activiteService.deleteActivite(id).subscribe(()=>{
     this.lesActivites=this.lesActivites.filter((activite)=>
     activite.id!=id
     )})
 };
+
+Recherche(){
+  this.lesActivites=this.lesActivites.filter((activite)=>
+  activite.titre.toLowerCase().includes(this.mot.toLowerCase()))
+}
 
 }

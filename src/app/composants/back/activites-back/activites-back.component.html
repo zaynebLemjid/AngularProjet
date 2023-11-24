@@ -1,3 +1,16 @@
+<div>
+    <input
+    [(ngModel)]="mot"
+    class="form-control mr-sm-2"
+    style="width: 170px; display: inline"
+    type="search"
+    placeholder="Search"
+    aria-label="Search"
+    (keyup)="Recherche()"
+  />
+  
+</div>
+
 <div id="act">
     <ul *ngFor="let activite of lesActivites">
         <li class="card">

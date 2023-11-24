@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SelectedActiviteComponent } from './composants/front/selected-activite/selected-activite.component';
 import { MenuBackComponent } from './composants/back/menu-back/menu-back.component';
 import { AjoutActiviteComponent } from './composants/back/ajout-activite/ajout-activite.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
 import { ModifierComponent } from './composants/back/modifier/modifier.component';
 
 @NgModule({
@@ -48,7 +48,8 @@ import { ModifierComponent } from './composants/back/modifier/modifier.component
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
