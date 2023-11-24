@@ -30,11 +30,11 @@ constructor(
    }) ;
    
    this.activiteFrom=this.fb.nonNullable.group({
-    id:[1,Validators.required],
-    titre:['Angular Masterclass',[Validators.required,Validators.pattern('[A-Z][a-z]+ ([A-Z][a-z]+)+$')]],
-    image:['angular.png',Validators.required],
-    date:['10/12/2023',[Validators.required,Validators.pattern('^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/(2023|2024)$')]],
-    confirmer:['false',Validators.pattern(/^(true|false)$/i)],
+    id:[this.activiteId,Validators.required],
+    titre:['',[Validators.required,Validators.pattern('[A-Z][a-z]+ ([A-Z][a-z]+)+$')]],
+    image:['',Validators.required],
+    date:['',[Validators.required,Validators.pattern('^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/(2023|2024)$')]],
+    confirmer:['',Validators.pattern(/^(true|false)$/i)],
     categorie:[Category.AtelierPratique],
     infos: new FormGroup({
     lieu: new FormControl('Salle de formation',{nonNullable:true}),
