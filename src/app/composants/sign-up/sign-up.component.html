@@ -1,0 +1,25 @@
+<body>
+    <main>
+<div class="form-container">
+    <strong>Sign-Up</strong>
+    <div class="mb-3 mt-3">
+      <label class="form-label">Username:</label>
+      <input type="text" class="form-control" placeholder="Choose a username" #username />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password:</label>
+      <input type="password" class="form-control" placeholder="Choose a password" #password />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Confirm Password:</label>
+      <input type="password" class="form-control" placeholder="Confirm your password" #confirmPassword />
+    </div>
+    <button class="Btn" (click)="signUp(username.value, password.value, confirmPassword.value)">
+        <div class="text">Sign-Up</div>
+      </button>
+      <button class="Btn" (click)="retourLogin()">
+        <span>Retour</span>
+      </button>
+  </div>
+</main>
+</body>

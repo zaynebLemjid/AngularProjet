@@ -1,0 +1,27 @@
+<body>
+<div class="mb-3">
+  <label class="form-label">Username:</label>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Enter username"
+    [(ngModel)]="username"
+  />
+</div>
+<div class="mb-3">
+  <label class="form-label">New Password:</label>
+  <input
+    type="password"
+    class="form-control"
+    placeholder="Enter new password"
+    [(ngModel)]="newPassword"
+  />
+</div>
+<button class="Btn" id="changePassword" (click)="changePassword()">
+  <div class="text">Change Password</div>
+</button>
+
+<button class="Btn" id="retour" (click)="retour()">
+    <span>Retour</span>
+  </button>
+</body>
