@@ -1,4 +1,5 @@
-// Inside sign-up.component.ts
+// sign-up.component.ts
+
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
@@ -19,7 +20,7 @@ export class SignUpComponent {
 
     this.authService.signUp(username, password).subscribe(
       () => {
-        alert('Sign-Up successful. You can now log in.');
+        // Navigate to login page after successful signup
         this.router.navigate(['/login']);
       },
       (error) => {
@@ -30,6 +31,6 @@ export class SignUpComponent {
   }
 
   retourLogin(){
-    this.router.navigate(['/login'])
+    this.router.navigate(['/login']);
   }
 }

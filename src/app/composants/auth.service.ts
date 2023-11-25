@@ -7,7 +7,7 @@ import { catchError, map, tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3001';
+  private apiUrl = 'http://localhost:3000';
 
   constructor(private http: HttpClient) {}
 
@@ -16,8 +16,11 @@ export class AuthService {
       .pipe(map(users => users.length > 0));
   }
 
-  isAdmin(): boolean {
-    return false; 
+  isAdmin(): Observable<boolean> {
+    return this.http.get<any[]>(`${this.apiUrl}/login?role=admin`).pipe(
+      map(users => users.length > 0),
+      catchError(this.handleError)
+    );
   }
 
   isUser(): boolean {
@@ -25,7 +28,7 @@ export class AuthService {
   }
 
   signUp(username: string, password: string): Observable<boolean> {
-    const newUser = { id: Date.now(), username, password };
+    const newUser = { id: Date.now(), username, password, role: 'user' };
     return this.http.post<any>(`${this.apiUrl}/login`, newUser)
       .pipe(catchError(this.handleError));
   }
