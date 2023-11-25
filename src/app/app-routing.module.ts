@@ -14,6 +14,8 @@ import { DepComponent } from './composants/public/dep/dep.component';
 import { SelectedActiviteComponent } from './composants/front/selected-activite/selected-activite.component';
 import { AjoutActiviteComponent } from './composants/back/ajout-activite/ajout-activite.component';
 import { ModifierComponent } from './composants/back/modifier/modifier.component';
+import { SignUpComponent } from './composants/sign-up/sign-up.component';
+import { ChangerMdpComponent } from './composants/back/changer-mdp/changer-mdp.component';
 
 const routes: Routes = [
   {
@@ -45,7 +47,10 @@ const routes: Routes = [
     ]
   },
   {path:'login' ,title :'login' ,component:LoginComponent},
-  {path:'**',title:'erreur',component:ErrurComponent }
+  {path:'sign-up', title:"sign-up", component:SignUpComponent },
+  {path:"changer-mdp", title:"chanager-mdp", component:ChangerMdpComponent},
+  {path:'**',title:'erreur',component:ErrurComponent },
+
 ];
 
 @NgModule({

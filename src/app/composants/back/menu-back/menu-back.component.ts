@@ -9,6 +9,6 @@ import { Router } from '@angular/router';
 export class MenuBackComponent {
   constructor(private router:Router){}
   logOut(){
-    this.router.navigate(['/']);
+    this.router.navigate(['/login']);
   }
 }

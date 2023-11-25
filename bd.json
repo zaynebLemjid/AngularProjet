@@ -124,6 +124,18 @@
         "lieu": "Salle de formation 1",
         "temps": 17
       }
+    },
+    {
+      "id": 1,
+      "titre": "Angular Masterclass",
+      "image": "angular.png",
+      "date": "10/12/2023",
+      "confirmer": "false",
+      "categorie": "Atelier pratique",
+      "infos": {
+        "lieu": "Salle de formation",
+        "temps": 15
+      }
     }
   ]
 }

@@ -22,6 +22,8 @@ import { MenuBackComponent } from './composants/back/menu-back/menu-back.compone
 import { AjoutActiviteComponent } from './composants/back/ajout-activite/ajout-activite.component';
 import { FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
 import { ModifierComponent } from './composants/back/modifier/modifier.component';
+import { SignUpComponent } from './composants/sign-up/sign-up.component';
+import { ChangerMdpComponent } from './composants/back/changer-mdp/changer-mdp.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,10 @@ import { ModifierComponent } from './composants/back/modifier/modifier.component
     SelectedActiviteComponent,
     MenuBackComponent,
     AjoutActiviteComponent,
-    ModifierComponent
+    ModifierComponent,
+    SignUpComponent,
+    SignUpComponent,
+    ChangerMdpComponent
   ],
   imports: [
     BrowserModule,
