@@ -23,7 +23,7 @@ const routes: Routes = [
     component:DashboradPublicComponent,
     children:[
       {path:'' , redirectTo:'departement',pathMatch:'full'},
-      {path:'departement',title:'About Us',component:DepComponent },
+      {path:'departement',title:'Welcome',component:DepComponent },
       {path:'formation' ,title:'formation' ,component:FormationComponent},
       {path:'iset' ,title:'iset' ,component:IsetCharguiaComponent},
 
