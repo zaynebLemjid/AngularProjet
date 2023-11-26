@@ -9,7 +9,8 @@ img{
     padding-bottom: 20px;
 }
 p{
-    margin-left: 40px;
+    text-align: left;
+    font-weight: bold;
 }
 footer{
     width: 100%;

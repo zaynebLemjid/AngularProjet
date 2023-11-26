@@ -23,6 +23,12 @@
       "username": "ad",
       "password": "ad",
       "role": "user"
+    },
+    {
+      "id": 1700998186117,
+      "username": "hassen",
+      "password": "hassen",
+      "role": "user"
     }
   ],
   "activites": [
