@@ -9,32 +9,46 @@ import { Router } from '@angular/router';
 })
 export class ActivitesFrontComponent implements OnInit {
 lesActivites!:any[];
-
+originalActivites!: any[];
 mot:string="";
 date:string="";
 constructor(private activiteService:ActiviteService,
   private router:Router){}
 
-ngOnInit(): void {
-    this.activiteService.getActivites().subscribe((data)=>
-    this.lesActivites=data
-    )
-}
-goToActivite(id:number):void{
-  this.router.navigate(['/front/selected-activite', id]);
-}
 
-Recherche(){
-  this.lesActivites=this.lesActivites.filter((activite)=>
-  activite.titre.toLowerCase().includes(this.mot.toLowerCase()))
-}
-RechercheDate() {
-  this.lesActivites = this.lesActivites.filter((activite) =>
-    activite.date.toLowerCase().includes(this.date.toLowerCase())
-  );
-}
+  ngOnInit(): void {
+    this.activiteService.getActivites().subscribe((data) => {
+      this.originalActivites = data;
+      this.lesActivites = data;
+    });
+  }
 
+  goToActivite(id: number): void {
+    this.router.navigate(['/front/selected-activite', id]);
+  }
 
+  Recherche() {
+    const searchTerm = this.mot.toLowerCase().trim();
+
+    if (searchTerm !== '') {
+      this.lesActivites = this.originalActivites.filter((activite) =>
+        activite.titre.toLowerCase().includes(searchTerm)
+      );
+    } else {
+      this.lesActivites = this.originalActivites;
+    }
+  }
+  RechercheDate() {
+    const searchTerm = this.date.toLowerCase().trim();
+
+    if (searchTerm !== '') {
+      this.lesActivites = this.originalActivites.filter((activite) =>
+        activite.date.toLowerCase().includes(searchTerm)
+      );
+    } else {
+      this.lesActivites = this.originalActivites;
+    }
+  }
 
 
 }
